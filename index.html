@@ -1,12 +1,93 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFT1206 Section 09 Home</title>
+    <title>HTML Multimedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
 </head>
-<body>
-    <h1>INFT1206 Section 09 Home</h1>
-    <h1>Welcome everyone</h1> 
+<body class="container">
+    <h1>Welcome to Week 3 Lab Session</h1>
+
+    <h2>Difference b/w DL & Details</h2>
+    
+    <h3>DL Element</h3>
+    <dl>
+        <dt>IP</dt>
+        <dd>Internet Protocol</dd>
+
+        <dt>HTTP</dt>
+        <dd>Hypertext Transfer Protocol</dd>
+    </dl>
+
+    <br>
+
+    <h3>Details Element</h3>
+    <details>
+        <summary>IP</summary>
+        <p>Internet Protocol</p>
+    </details>
+    <details>
+        <summary>HTTP</summary>
+        <p>Hypertext Transfer Protocol</p>
+    </details>
+
+    <hr>
+
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="doorbell.mp3" type="audio/mpeg">
+        <a href="doorbell.mp3">Download</a>
+    </audio>    
+
+    <hr>
+
+    <h2>Video Element</h2>
+    <video width="550" height="315" poster="cute-puppy-800x600.jpg" controls>
+        <source src="lion-sample.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <h2>IFrame</h2>
+    <iframe 
+    width="1120" 
+    height="315" 
+    src="INFT_1206_2023_2024.pdf" 
+    title="Random IFrame Example" 
+    frameborder="0" 
+    allowfullscreen></iframe>
+
+    <hr>
+    
+    <h2>Table Element</h2>
+    <table>
+        <tr>
+            <th colspan="2">Birthday List</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Sohaib</td>
+            <td>01/01/1970</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>03/12/2023</td>
+        </tr>
+    </table>
+
 </body>
 </html>
