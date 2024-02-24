@@ -128,4 +128,15 @@
   nav li {
     padding: 10px 0;
   }
+
+  /* Add image to the right side of the specific links */
+    section h1:first-of-type a::after {
+    content: url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/external-link-52.png');
+    margin-left: 5px;
+  }
+  /* I see tiny links? Is this what we're supposed to get? It's not the same as the example photo but makes sense. */
+
+  /* Not sure why this doesn't work^ I'm not sure if you will be able to see it on your end.
+  The idea was to add the tiny 52x52 px image next to the linked words in the "Brave New World"
+  paragraph. */
   
