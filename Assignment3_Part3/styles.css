@@ -8,7 +8,7 @@
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-    font-family: 'YourSerifFont', serif;
+    font-family: 'Caslon Antique', serif;
     font-size: 10px;
   }
   
@@ -57,11 +57,11 @@
     font-family: 'Great Victorian';
     src: url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/great-victorian/GreatVictorian.woff2') format('woff2'),
          url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/great-victorian/GreatVictorian.woff') format('woff');
+         /* Still don't think the link is going to work for you but I guess that's fine? */
   }
   
-  
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'YourSansSerifFont', sans-serif;
+    font-family: 'Great Victorian', sans-serif;
   }
   
   /* General text styling */
