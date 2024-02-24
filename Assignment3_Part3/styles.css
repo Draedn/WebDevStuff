@@ -1,45 +1,131 @@
 /* General setup */
 
 * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-}
-
-/* Layout */
-
-section {
-  float: left;
-  width: 50%;
-}
-
-aside {
-  float: left;
-  width: 30%;
-}
-
-nav {
-  float: left;
-  width: 20%;
-}
-
-footer {
-  clear: both;
-}
-
-header, section, aside, nav, footer {
-  padding: 20px;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
-
-/* WRITE YOUR CODE BELOW HERE */
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-family: 'YourSerifFont', serif;
+    font-size: 10px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  
+  /* Fonts */
+  @font-face {
+    font-family: 'Caslon Antique';
+    src: url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/caslon-antique/CaslonAntique.woff2') format('woff2'),
+         url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/caslon-antique/CaslonAntique.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Great Victorian';
+    src: url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/great-victorian/GreatVictorian.woff2') format('woff2'),
+         url('C:/OneDrive/OneDrive - Durham College/Desktop/WebDev/Assignment 3/Fonts/great-victorian/GreatVictorian.woff') format('woff');
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'YourSansSerifFont', sans-serif;
+  }
+  
+  /* General text styling */
+  body {
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    letter-spacing: 0.05em;
+  }
+  
+  p {
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+  }
+  
+  section > p:first-child {
+    text-indent: 20px;
+  }
+  
+  /* Links */
+  a:link, a:visited {
+    color: #a66;
+    text-decoration: underline;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  a:focus {
+    outline: none;
+  }
+  
+  a:active {
+    color: #f00;
+  }
+  
+  a[href^="http"]:after {
+    content: "🔗";
+    margin-left: 5px;
+  }
+  
+  /* Lists */
+  ul, ol {
+    margin: 1em 0;
+  }
+  
+  li {
+    line-height: 1.6;
+  }
+  
+  /* Navigation menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    padding: 10px 0;
+  }
+  
