@@ -1,3 +1,16 @@
+/*
+
+         Name: Draedn Groves
+                100727783
+
+         File: index.html
+
+         Date: 28th March 2024
+
+         main.js - The inner workings of the ball bouncing, colour changing emporium. 
+
+*/
+
 // setup canvas
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
