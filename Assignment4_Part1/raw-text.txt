@@ -1,3 +1,16 @@
+<!--
+
+         Name: Draedn Groves
+                100727783
+
+         File: index.html
+
+         Date: 29th March 2024
+
+         Raw text file.
+
+-->
+
 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
