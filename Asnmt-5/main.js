@@ -1,5 +1,12 @@
-// functionality for showing/hiding the comments section
+/*
+	Name: Draedn Groves
+	File: main.js
+	Date: April.12th/2024
+	The javascript file actually called main.js that adds our "behind-the-scenes" functionality.
+*/
 
+
+// functionality for showing/hiding the comments section
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
@@ -17,7 +24,6 @@ showHideBtn.onclick = function() {
 };
 
 // functionality for adding a new comment via the comments form
-
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
 const commentField = document.querySelector('#comment');
