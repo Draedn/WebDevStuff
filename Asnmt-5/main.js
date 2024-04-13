@@ -24,30 +24,22 @@ showHideBtn.onclick = function() {
 };
 
 // functionality for adding a new comment via the comments form
-const form = document.querySelector('.comment-form');
-const nameField = document.querySelector('#name');
-const commentField = document.querySelector('#comment');
-const list = document.querySelector('.comment-container');
+document.querySelector('.comment-form').addEventListener('submit', function(event) {
+  // Prevent the form from being submitted normally
+  event.preventDefault();
 
-form.onsubmit = function(e) {
-  e.preventDefault();
-  submitComment();
-};
+  // Get the name and comment from the form
+  var name = document.querySelector('#name').value;
+  var comment = document.querySelector('#comment').value;
 
-function submitComment() {
-  const listItem = document.createElement('li');
-  const namePara = document.createElement('p');
-  const commentPara = document.createElement('p');
-  const nameValue = nameField.value;
-  const commentValue = commentField.value;
+  // Create a new comment element
+  var newComment = document.createElement('p');
+  newComment.textContent = name + ' says: ' + comment;
 
-  namePara.textContent = nameValue;
-  commentPara.textContent = commentValue;
+  // Add the new comment to the comment section
+  document.querySelector('.comment-wrapper').appendChild(newComment);
 
-  list.appendChild(listItem);
-  listItem.appendChild(namePara);
-  listItem.appendChild(commentPara);
-
-  nameField.value = '';
-  commentField.value = '';
-}
+  // Clear the form
+  document.querySelector('#name').value = '';
+  document.querySelector('#comment').value = '';
+});
