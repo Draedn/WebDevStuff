@@ -6,6 +6,16 @@
 */
 
 
+/* Slightly altered the javascript based on ai recommendation to implement
+the event listener function by replacing the follwing:
+
+      submitComment function and the form.onsubmit 
+
+this was definitely not neccesary but I wanted to end the semester
+with something different */ 
+
+
+
 // functionality for showing/hiding the comments section
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
